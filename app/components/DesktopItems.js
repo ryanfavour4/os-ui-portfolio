@@ -27,7 +27,7 @@ const DesktopItems = ({ isStartMenuOpen, setShowModal, setGame, setCodeIde }) =>
           href="https://github.com/JayWebtech"
           onClick={() => {
             const audio = new Audio("click.wav");
-            audio.play();
+            audio.play()
           }}
           target="_blank"
         >
@@ -39,9 +39,10 @@ const DesktopItems = ({ isStartMenuOpen, setShowModal, setGame, setCodeIde }) =>
 
         <Link
           href="https://drive.google.com/file/d/11DUIKYSHdVQ-An9-0nHBJJf9Z5LMYqWi/view?usp=sharing"
+
           onClick={() => {
             const audio = new Audio("click.wav");
-            audio.play();
+            audio.play()
           }}
           target="_blank"
         >
