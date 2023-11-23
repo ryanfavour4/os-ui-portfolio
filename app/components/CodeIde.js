@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { MdOutlineClose } from "react-icons/md";
 import Editor from "@monaco-editor/react";
 import { BiLogoJavascript } from "react-icons/bi";
@@ -77,11 +77,14 @@ export default function CodeIde({ codeIde, setCodeIde }) {
 		</html>`);
 	}
 
-	window.addEventListener("keydown", (e) => {
-		if (e.key === "Escape") {
-			setCodeIde(false);
-		}
-	})
+	useEffect(() => {
+		window.addEventListener("keydown", (e) => {
+			if (e.key === "Escape") {
+				setCodeIde(false);
+			}
+		})
+	}, []);
+
 
 	return (
 		<div
