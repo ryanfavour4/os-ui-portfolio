@@ -15,9 +15,8 @@ const Projects = ({ showModal, setShowModal }) => {
   const [qr, setQR] = useState(false);
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center overflow-auto bg-black bg-opacity-50 transition-opacity ${
-        showModal ? "opacity-100 visible" : "opacity-0 invisible"
-      }`}
+      className={`fixed inset-0 z-50 flex items-center justify-center overflow-auto bg-black bg-opacity-50 transition-opacity ${showModal ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
     >
       <div className="bg-opacity-100 backdrop-blur-3xl border border-gray-400  w-[1000px]  smbelow:h-[600px]  smbelow:overflow-y-auto smbelow:mt-5 h-auto p-1 rounded-lg shadow-xl  border-opacity-10 ">
         <div className="flex">
@@ -317,7 +316,7 @@ const Projects = ({ showModal, setShowModal }) => {
             !qr && (
               <div className="flex flex-col w-full ">
                 <h1 className="text-4xl smbelow:text-2xl font-medium text-white border-b-2 pb-4 border-gray-400 border-opacity-10 w-full">
-                  Personal Projects
+                  Projects <small className="text-base">(Inchoate)</small>
                 </h1>
                 <div className="flex mt-5 w-full smbelow:flex-col gap-2 ">
                   <div

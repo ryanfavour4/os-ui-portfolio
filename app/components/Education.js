@@ -5,9 +5,8 @@ import { MdOutlineClose } from "react-icons/md";
 const Education = ({ education, setEducation }) => {
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center overflow-auto bg-black bg-opacity-50 transition-opacity ${
-        education ? "opacity-100 visible" : "opacity-0 invisible"
-      }`}
+      className={`fixed inset-0 z-50 flex items-center justify-center overflow-auto bg-black bg-opacity-50 transition-opacity ${education ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
     >
       <div className="bg-opacity-100 backdrop-blur-3xl border border-gray-400  w-[1000px] h-auto p-1 rounded-lg shadow-xl  border-opacity-10">
         <div className="flex">
@@ -33,11 +32,10 @@ const Education = ({ education, setEducation }) => {
                     {/* EcoHotels */}
                     <div className="flex flex-col space-y-2">
                       <h3 className="text-lg font-medium">
-                        2022 - Nigerian Institute of Leather and Science
-                        Technology, Kaduna
+                        2022 - New Horizon Computer Institute, Lagos
                       </h3>
                       <p className="text-sm">
-                        Higher National Diploma in Computer Science
+                        Certificate of completion, Full-Stack Web Development
                       </p>
                     </div>
                   </div>

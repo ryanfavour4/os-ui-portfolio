@@ -24,7 +24,7 @@ const DesktopItems = ({ isStartMenuOpen, setShowModal, setGame, setCodeIde }) =>
           <p className="text-white text-center">Projects</p>
         </div>
         <Link
-          href="https://github.com/JayWebtech"
+          href="https://github.com/ryanfavour4"
           onClick={() => {
             const audio = new Audio("click.wav");
             audio.play()
@@ -38,7 +38,7 @@ const DesktopItems = ({ isStartMenuOpen, setShowModal, setGame, setCodeIde }) =>
         </Link>
 
         <Link
-          href="https://drive.google.com/file/d/11DUIKYSHdVQ-An9-0nHBJJf9Z5LMYqWi/view?usp=sharing"
+          href="https://drive.google.com/file/d/1cQegfCfLbmHH6W5d2g_kS27iClgqRHwe/view?usp=drive_link"
 
           onClick={() => {
             const audio = new Audio("click.wav");

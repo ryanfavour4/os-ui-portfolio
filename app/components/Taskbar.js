@@ -3,6 +3,7 @@ import { MdWindow } from "react-icons/md";
 import { FcFolder } from "react-icons/fc";
 import { VscGithubInverted } from "react-icons/vsc";
 import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitterSquare } from "react-icons/fa";
 import { BsFillCloudFill } from "react-icons/bs";
 import Link from "next/link";
@@ -22,6 +23,7 @@ const Taskbar = ({
   const [isProjectsHovered, setIsProjectsHovered] = useState(false);
   const [isGithubHovered, setIsGithubHovered] = useState(false);
   const [isLinkedInHovered, setIsLinkedInHovered] = useState(false);
+  const [isInstagramHovered, setIsInstagramHovered] = useState(false);
   const [isTwitterHovered, setIsTwitterHovered] = useState(false);
 
   useEffect(() => {
@@ -100,7 +102,7 @@ const Taskbar = ({
           )}
         </div>
         <Link
-          href="https://github.com/JayWebtech"
+          href="https://github.com/ryanfavour4"
           onClick={() => {
             const audio = new Audio("click.wav");
             audio.play();
@@ -121,7 +123,7 @@ const Taskbar = ({
           </div>
         </Link>
         <Link
-          href="https://www.linkedin.com/in/jaykosai/"
+          href="https://linkedin.com/in/chukwuka-favour-6b094b240"
           target="_blank"
           onClick={() => {
             const audio = new Audio("click.wav");
@@ -142,7 +144,28 @@ const Taskbar = ({
           </div>
         </Link>
         <Link
-          href="https://twitter.com/jaykosai"
+          href="https://instagram.com/ryanfavour4/"
+          target="_blank"
+          onClick={() => {
+            const audio = new Audio("click.wav");
+            audio.play();
+          }}
+        >
+          <div
+            className="p-1 rounded-md relative transition duration-100 hover:shadow-xl hover:bg-slate-900 hover:bg-opacity-50 hover:cursor-pointer hover:backdrop-blur-lg "
+            onMouseEnter={() => setIsInstagramHovered(true)}
+            onMouseLeave={() => setIsInstagramHovered(false)}
+          >
+            <AiFillInstagram className="text-[40px] fill-[#d83f7a]" />
+            {isInstagramHovered && (
+              <span className="bg-black text-white p-2 rounded-md absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 text-[13px] w-[100px] text-center">
+                Instagram
+              </span>
+            )}
+          </div>
+        </Link>
+        <Link
+          href="https://twitter.com/ryanfavour4"
           target="_blank"
           onClick={() => {
             const audio = new Audio("click.wav");
